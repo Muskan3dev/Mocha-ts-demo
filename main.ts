@@ -134,3 +134,11 @@ console.log("Going to read the same file");
     });
 });
 });
+
+//Delete a file-fs.unlink(path, callback)
+console.log("Going to delete an existing file");
+fs.unlink('input.txt',function(err){
+if(err){
+    console.error(err);
+}
+});
