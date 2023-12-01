@@ -34,3 +34,19 @@ fs.stat("input.txt",function(err,stats) {
     console.log("isFile? ", stats.isFile());
     console.log("isDirectory? ", stats.isDirectory());
 });
+
+//Writing in an existing file-fs.writeFile(filename,data,callback)
+console.log("Going to write into an existing file");
+fs.writeFile('input.txt', 'It is used on client side as well as server side', function(err){
+if(err){
+    console.error(err);
+}
+console.log("Data written successfully");
+console.log("Let's read newly written Data");
+ fs.readFile('input.txt', function (err,data){
+if(err){
+    console.log(err);
+}
+console.log("Asynchronous read:"+data.toString());
+ });
+});
