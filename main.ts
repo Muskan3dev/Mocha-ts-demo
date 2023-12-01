@@ -1,3 +1,4 @@
+export { }
 var fs = require("fs");
 // Asynchronous read
 fs.readFile('input.txt', function (err, data) {
