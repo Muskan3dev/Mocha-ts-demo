@@ -1,0 +1,1 @@
+Javascript is a high level,interpreted and dynamic Scripting language.
